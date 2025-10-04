@@ -1,6 +1,6 @@
 # AFDSimulator
 
-Attention–FFN Disaggregation (AFD) Simulator is a planning sandbox for giant LLM inference. It keeps FLOP estimates deterministic and hardware-agnostic, then turns those numbers into latency projections (in **milliseconds**) using per-device bandwidth/throughput specs. The framework is layer-centric: attention, FFN/MoE, and communication components are evaluated independently and rolled up into an end-to-end serving profile.
+LLMSimulator is a planning sandbox for giant LLM inference. It keeps FLOP estimates deterministic and hardware-agnostic, then turns those numbers into latency projections (in **milliseconds**) using per-device bandwidth/throughput specs. The framework is layer-centric: attention, FFN/MoE, and communication components are evaluated independently and rolled up into an end-to-end serving profile.
 
 ## Highlights
 - **Deterministic analytics**: fused-op formulas capture QKV projections, expert matmuls, and routing paths so FLOPs are reproducible across runs.
